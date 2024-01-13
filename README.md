@@ -1,1 +1,6 @@
-# azraimahadan.github.io
+# aData Scientist
+
+### Education
+Korea univeristy
+
+### Work Experience
