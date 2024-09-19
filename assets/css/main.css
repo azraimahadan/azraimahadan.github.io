@@ -2623,7 +2623,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 100%; 
 		}
 
 			.image.fit:first-child {
@@ -2632,6 +2632,8 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: 300px; /* Set a fixed height for the images */
+				object-fit: cover; /* Ensures the image fills the area without distortion */
 			}
 
 		.image.main {
@@ -2659,6 +2661,12 @@ input, select, textarea {
 			}
 
 		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		  }
 
 	a.image {
 		overflow: hidden;
